@@ -21,7 +21,7 @@
 <meta property="og:locale" content="English">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/538619-171a21193ea1af94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/538619-d5884d3e627bd328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-05-08T16:43:04.087Z">
+<meta property="og:updated_time" content="2019-05-08T16:57:58.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python data analysis - 使用Sublime text 3 + Anaconda模式">
 <meta name="twitter:description" content="简单记录一些配置时的要点 在Sublime中安装package control参考: https://blog.csdn.net/zhuangailing/article/details/79046187   view -&amp;gt; show console输入如下网址中内容:https://packagecontrol.io/installation  在preferences中的packages">
@@ -62,9 +62,31 @@
 
 
   
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src>
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src>
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
 
 
-<header id="allheader" class="site-header" role="banner">
+
+
+<header id="allheader" class="site-header" role="banner" style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);">
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -153,7 +175,7 @@
 </blockquote>
 </li>
 </ol>
-<p>接下来，sublime3编写python代码时会有提示功能。</p>
+<p>接下来，sublime3编写python代码时会有提示功能。<br><a id="more"></a></p>
 <ul>
 <li><h4 id="配置Anaconda运行"><a href="#配置Anaconda运行" class="headerlink" title="配置Anaconda运行"></a>配置Anaconda运行</h4>参考: <a href="https://blog.csdn.net/zhihaoma/article/details/50917915" target="_blank" rel="noopener">https://blog.csdn.net/zhihaoma/article/details/50917915</a></li>
 </ul>
@@ -288,6 +310,9 @@
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
     
 </script>

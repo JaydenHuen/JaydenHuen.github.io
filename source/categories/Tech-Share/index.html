@@ -55,9 +55,31 @@
 
 
   
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src>
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src>
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
 
 
-<header id="allheader" class="site-header" role="banner">
+
+
+<header id="allheader" class="site-header" role="banner" style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);">
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -211,39 +233,33 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="简单记录一些配置时的要点"><a href="#简单记录一些配置时的要点" class="headerlink" title="简单记录一些配置时的要点"></a>简单记录一些配置时的要点</h2><ul>
-<li><h4 id="在Sublime中安装package-control"><a href="#在Sublime中安装package-control" class="headerlink" title="在Sublime中安装package control"></a>在Sublime中安装package control</h4>参考: <a href="https://blog.csdn.net/zhuangailing/article/details/79046187" target="_blank" rel="noopener">https://blog.csdn.net/zhuangailing/article/details/79046187</a></li>
-</ul>
-<ol>
-<li><p>view -&gt; show console<br>输入如下网址中内容:<br><a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">https://packagecontrol.io/installation</a></p>
-</li>
-<li><p>在preferences中的packages control中输入  install package<br>在里面输入Anaconda, 完成后显示如下信息:<br><img src="https://upload-images.jianshu.io/upload_images/538619-171a21193ea1af94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-</li>
-<li><p>修改python路径<br>由于插件本身无法知道Python安装的路径，所以需要手动设置Python主程序的位置。选择Preferences-package Setting-Anaconda-Settings-Default。<br><img src="https://upload-images.jianshu.io/upload_images/538619-d5884d3e627bd328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-</li>
-<li><p>新建User Setting<br>选择Preferences-package Setting-Anaconda-Settings-Users选项，键入以下json数据, 修改其中的”python_interpreter” 为你的python使用路径。保存，重启sublime即可.<br>(python使用目录: 打开Prompt命令行, 在激活路径(conda info –env)下输入where python)</p>
-<blockquote>
-<p>{<br> “python_interpreter”:”E:/Anaconda3/envs/neuralnets”,<br> “suppress_word_completions”:true,<br> “suppress_explicit_completions”:true,<br> “comlete_parameters”:true,<br> “swallow_startup_errors”:true,<br> “anaconda_linting”:false<br>}</p>
-</blockquote>
-</li>
-</ol>
-<p>接下来，sublime3编写python代码时会有提示功能。</p>
-<ul>
-<li><h4 id="配置Anaconda运行"><a href="#配置Anaconda运行" class="headerlink" title="配置Anaconda运行"></a>配置Anaconda运行</h4>参考: <a href="https://blog.csdn.net/zhihaoma/article/details/50917915" target="_blank" rel="noopener">https://blog.csdn.net/zhihaoma/article/details/50917915</a></li>
-</ul>
-<p>1.打开Sublime Text 3，工具–&gt;编译系统–&gt;新编译系统，就会打开文件sublime-build，</p>
-<ol start="2">
-<li>修改以下内容：<blockquote>
-<p>{<br>“cmd”: [“python”, “-u”, “$file”],<br>“path”:”E:/Anaconda3/envs/neuralnets”,<br>“file_regex”: “^[ ]<em>File \”(…</em>?)\”, line ([0-9]*)”,<br>“selector”: “source.python”,<br>“shell”: true<br>}</p>
-</blockquote>
-</li>
-</ol>
-<p>把path里面的内容修改为Anaconda编译器的安装目录即可。保存文件并命名为Anaconda3.sublime-build，文件自动保存在E:\SublimeText3\Data\Packages\User目录下，此时在sublime的工具-&gt; 编译系统中就会有Anaconda3，就选择这个编译环境，ctrl+b便可以运行python代码了。</p>
-<ul>
-<li><h4 id="Trouble-Shooting"><a href="#Trouble-Shooting" class="headerlink" title="Trouble Shooting"></a>Trouble Shooting</h4>*如果你没有保存一个文件就build，有可能出来以下的错误：</li>
-</ul>
-<p>E:/Anaconda3/envs/neuralnets\python.exe: can’t find ‘<strong>main</strong>‘ module in ‘’<br>           这个问题其实有点蠢, 就是因为没将要build的文件先保存再ctrl+b运行导致的, 所以记得先保存再运行,以便Python能够运行起来。</p>
+        
 
+          
+          <div class="entry-summary">
+          简单记录一些配置时的要点
+在Sublime中安装package control参考: https://blog.csdn.net/zhuangailing/article/details/79046187
+
+
+view -&gt; show console输入如下网址中内容:https://packagecontrol.io/installation
+
+在preferences中的packages control中输入  install package在里面输入Anaconda, 完成后显示如下信息:
+
+修改python路径由于插件本身无法知道Python安装的路径，所以需要手动设置Python主程序的位置。选择Preferences-package Setting-Anaconda-Settings-Default。
+
+新建User Setting选择Preferences-package Setting-Anaconda-Settings-Users选项，键入以下json数据, 修改其中的”python_interpreter” 为你的python使用路径。保存，重启sublime即可.(python使用目录: 打开Prompt命令行, 在激活路径(conda info –env)下输入where python)
+
+{ “python_interpreter”:”E:/Anaconda3/envs/neuralnets”, “suppress_word_completions”:true, “suppress_explicit_completions”:true, “comlete_parameters”:true, “swallow_startup_errors”:true, “anaconda_linting”:false}
+
+
+
+接下来，sublime3编写python代码时会有提示功能。
+
+        
+          <p class="article-more-link">
+            <a href="/2019/05/05/python data analysis - 使用Sublime text 3 + Anaconda模式/#more">Continue Reading →</a>
+          </p>
+        </div>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -498,6 +514,9 @@
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
     
 </script>
