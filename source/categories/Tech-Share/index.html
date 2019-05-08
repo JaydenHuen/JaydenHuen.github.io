@@ -3,7 +3,7 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Archives | K.L. Huen&#39;s BLOG</title>
+  <title>Category: Tech Share | K.L. Huen&#39;s BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
@@ -12,7 +12,7 @@
   <meta name="description" content="每一个不曾分享的剧本都是对主角的辜负 Welcome">
 <meta property="og:type" content="website">
 <meta property="og:title" content="K.L. Huen&#39;s BLOG">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/source/categories/Tech-Share/index.html">
 <meta property="og:site_name" content="K.L. Huen&#39;s BLOG">
 <meta property="og:description" content="每一个不曾分享的剧本都是对主角的辜负 Welcome">
 <meta property="og:locale" content="English">
@@ -103,131 +103,171 @@
       <div id="content" class="outer">
         
           <section id="main">
-  <div class="archives-tags-wrap"><blockquote><span>There are 5 posts in total till now.</span></blockquote>
-
-
-
-
-
-	<!-- 完全显示 -->
-	
-	
-		
-		
-		  
-		  
-		  <section class="archives-wrap">
-		    <div class="archive-year-wrap">
-		      <h1><a href="/archives/2019" class="archive-year">2019</a></h1>
-		    </div>
-		    <div class="archives">
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-
-      <a href="/2019/05/09/论物质价值溢价与掉价效应/" class="archive-article-date">
-		  <time datetime="2019-05-08T16:29:29.832Z" itemprop="datePublished">May 09, 2019</time>
-	  </a>
-      
+  
+    <article id="post-部署Python数据开发环境（Anaconda + theano_tensorflow_keras_scikit-learn" class="article article-type-post" itemscope itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
   
     <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2019/05/09/论物质价值溢价与掉价效应/">论物质价值溢价与掉价效应</a>
+      <a class="article-title" href="/2019/05/05/部署Python数据开发环境（Anaconda + theano_tensorflow_keras_scikit-learn/">部署Python数据开发环境</a>
     </h1>
   
 
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-
-      <a href="/2019/05/09/衣食住行，谁是分享经济这个疆域的下一个霸主？/" class="archive-article-date">
-		  <time datetime="2019-05-08T16:09:16.080Z" itemprop="datePublished">May 09, 2019</time>
-	  </a>
+      </header>
+    
+    <div class="article-meta">
       
+	<a href="/2019/05/05/部署Python数据开发环境（Anaconda + theano_tensorflow_keras_scikit-learn/" class="article-date">
+	  <time datetime="2019-05-05T03:40:42.392Z" itemprop="datePublished">May 5, 2019</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/source/categories/Tech-Share/">Tech Share</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><p><strong>Anaconda + theano / Tensorflow / Keras / scikit-learn</strong></p>
+<h2 id="Anaconda-安装"><a href="#Anaconda-安装" class="headerlink" title="Anaconda 安装"></a>Anaconda 安装</h2><p>Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。<br>Anaconda 下载连接：<a href="https://www.anaconda.com/download/" target="_blank" rel="noopener">https://www.anaconda.com/download/</a><br>NOTE: </p>
+<ol>
+<li>由于目前Tensorflow、Keras等DL库只支持64bit版本，所以在选择Anaconda发行版本时一定要选择64bit的</li>
+<li>在Anaconda的安装过程中，记得选择<br>Install for： All Users(requires admin privileges),<br>否则在安装完后无法在开始菜单中找到安装好的Anaconda的所有工具</li>
+</ol>
+<h2 id="安装Keras-Tensorflow-theano-等深度学习库及scikit-learn机器学习库"><a href="#安装Keras-Tensorflow-theano-等深度学习库及scikit-learn机器学习库" class="headerlink" title="安装Keras/Tensorflow/theano 等深度学习库及scikit-learn机器学习库"></a>安装Keras/Tensorflow/theano 等深度学习库及scikit-learn机器学习库</h2><p>安装完成后，配置path变量——<br>右键我的电脑-&gt;属性-&gt;高级选项-&gt;环境变量-&gt;系统变量-&gt;path-&gt;在path中添加路径：需要添加的有三个，以我的Anaconda安装目录为例，分别为：<br> E:\ProgramFiles_for_Major\Anaconda3;<br>E:\ProgramFiles_for_Major\Anaconda3\Scripts;<br>E:\ProgramFiles_for_Major\Anaconda3\Library\bin;</p>
+<p>在安装好的Anaconda 套件中打开 Anaconda Prompt，直接进入到command模式。</p>
+<p>更新conda<br><code>conda update conda</code><br><code>conda update --all</code><br>将pip升级到最新版：<br><code>python -m pip install -U pip</code></p>
+<blockquote>
+<p>– CREATE ENVIRONMENT/WORKSPACE FOR PYTHON 3.6:<br><code>conda create --name neuralnets python=3.6</code><br><code>activate neuralnets</code><br>– INSTALL EVERYTHING (notice the neuralnets workspace in parenthesis on each line). ACCEPT ANY DEPENDENCIES EACH OF THOSE STEPS WANTS TO INSTALL:<br><code>conda install theano</code><br><code>conda install mingw libpython</code><br><code>pip install tensorflow</code><br><code>pip install keras</code><br><code>conda install scikit-learn</code><br>注意，上述命令均在激活了neuralnets这个环境下执行，这里比较麻烦的是每次使用都要先激活 neuralmets 这个环境：<br><code>activate neuralnets</code></p>
+</blockquote>
+<h2 id="验证是否安装成功"><a href="#验证是否安装成功" class="headerlink" title="验证是否安装成功"></a>验证是否安装成功</h2><p>在Prompt 终端直接进入python环境并import 这些库<br><code>python</code></p>
+<ol>
+<li><code>&gt;&gt;&gt;import tensorflow</code><br>若下一行出现&gt;&gt;&gt;，则说明TensorFlow安装成功</li>
+<li><code>&gt;&gt;&gt;import keras</code><br>若显示Using TensorFlow backed，则说明安装成功</li>
+<li><code>&gt;&gt;&gt;import theano</code><br>如果你看到“&gt;&gt;&gt;”三个箭头，没有别的乱七八糟的东西了，就说明：你！安！装！成！功！啦！<br>如果有提示需要添加环境变量的，就需要按照提示在系统环境变量中添加<br>MKL_THREADING_LAYER=GNU<br>然后<strong>重启prompt终端</strong>，再次<code>import theano</code></li>
+<li><code>&gt;&gt;&gt;import sklearn</code><br>若下一行出现&gt;&gt;&gt;，则说明scikit-learn安装成功</li>
+</ol>
+<p>若一切顺利，恭喜你，环境基本配好了！<br>在Spyder中使用可以参考下面的链接。</p>
+<p>几个重要的参考连接：</p>
+<ul>
+<li><a href="http://www.bubuko.com/infodetail-2485059.html" target="_blank" rel="noopener">http://www.bubuko.com/infodetail-2485059.html</a></li>
+<li><a href="https://www.jianshu.com/p/b8a703df5318" target="_blank" rel="noopener">https://www.jianshu.com/p/b8a703df5318</a></li>
+<li><a href="https://stackoverflow.com/questions/34097988/how-do-i-install-keras-and-theano-in-anaconda-python-on-windows" target="_blank" rel="noopener">https://stackoverflow.com/questions/34097988/how-do-i-install-keras-and-theano-in-anaconda-python-on-windows</a></li>
+<li><a href="http://www.cnblogs.com/AriesQt/p/6773811.html" target="_blank" rel="noopener">http://www.cnblogs.com/AriesQt/p/6773811.html</a></li>
+<li><a href="http://deeplearning.net/software/theano/index.html" target="_blank" rel="noopener">http://deeplearning.net/software/theano/index.html</a></li>
+<li><a href="https://conda.io/docs/user-guide/overview.html" target="_blank" rel="noopener">https://conda.io/docs/user-guide/overview.html</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/source/categories/Tech-Share/">Tech Share</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Analysis/">Data Analysis</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-python data analysis - 使用Sublime text 3 + Anaconda模式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
   
     <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2019/05/09/衣食住行，谁是分享经济这个疆域的下一个霸主？/">衣食住行，谁是分享经济这个疆域的下一个霸主？</a>
+      <a class="article-title" href="/2019/05/05/python data analysis - 使用Sublime text 3 + Anaconda模式/">python data analysis - 使用Sublime text 3 + Anaconda模式</a>
     </h1>
   
 
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-
-      <a href="/2019/05/05/部署Python数据开发环境（Anaconda + theano_tensorflow_keras_scikit-learn/" class="archive-article-date">
-		  <time datetime="2019-05-05T03:40:42.392Z" itemprop="datePublished">May 05, 2019</time>
-	  </a>
+      </header>
+    
+    <div class="article-meta">
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2019/05/05/部署Python数据开发环境（Anaconda + theano_tensorflow_keras_scikit-learn/">部署Python数据开发环境</a>
-    </h1>
-  
+	<a href="/2019/05/05/python data analysis - 使用Sublime text 3 + Anaconda模式/" class="article-date">
+	  <time datetime="2019-05-05T03:40:42.385Z" itemprop="datePublished">May 5, 2019</time>
+	</a>
 
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-
-      <a href="/2019/05/05/python data analysis - 使用Sublime text 3 + Anaconda模式/" class="archive-article-date">
-		  <time datetime="2019-05-05T03:40:42.385Z" itemprop="datePublished">May 05, 2019</time>
-	  </a>
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2019/05/05/python data analysis - 使用Sublime text 3 + Anaconda模式/">python data analysis - 使用Sublime text 3 + Anaconda模式</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-
-      <a href="/2019/05/05/Git 的 origin 和 master 分析/" class="archive-article-date">
-		  <time datetime="2019-05-05T03:40:42.341Z" itemprop="datePublished">May 05, 2019</time>
-	  </a>
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/source/categories/Tech-Share/">Tech Share</a>
+ 
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2019/05/05/Git 的 origin 和 master 分析/">Git的 origin 和 master 分析</a>
-    </h1>
-  
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="简单记录一些配置时的要点"><a href="#简单记录一些配置时的要点" class="headerlink" title="简单记录一些配置时的要点"></a>简单记录一些配置时的要点</h2><ul>
+<li><h4 id="在Sublime中安装package-control"><a href="#在Sublime中安装package-control" class="headerlink" title="在Sublime中安装package control"></a>在Sublime中安装package control</h4>参考: <a href="https://blog.csdn.net/zhuangailing/article/details/79046187" target="_blank" rel="noopener">https://blog.csdn.net/zhuangailing/article/details/79046187</a></li>
+</ul>
+<ol>
+<li><p>view -&gt; show console<br>输入如下网址中内容:<br><a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">https://packagecontrol.io/installation</a></p>
+</li>
+<li><p>在preferences中的packages control中输入  install package<br>在里面输入Anaconda, 完成后显示如下信息:<br><img src="https://upload-images.jianshu.io/upload_images/538619-171a21193ea1af94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+</li>
+<li><p>修改python路径<br>由于插件本身无法知道Python安装的路径，所以需要手动设置Python主程序的位置。选择Preferences-package Setting-Anaconda-Settings-Default。<br><img src="https://upload-images.jianshu.io/upload_images/538619-d5884d3e627bd328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+</li>
+<li><p>新建User Setting<br>选择Preferences-package Setting-Anaconda-Settings-Users选项，键入以下json数据, 修改其中的”python_interpreter” 为你的python使用路径。保存，重启sublime即可.<br>(python使用目录: 打开Prompt命令行, 在激活路径(conda info –env)下输入where python)</p>
+<blockquote>
+<p>{<br> “python_interpreter”:”E:/Anaconda3/envs/neuralnets”,<br> “suppress_word_completions”:true,<br> “suppress_explicit_completions”:true,<br> “comlete_parameters”:true,<br> “swallow_startup_errors”:true,<br> “anaconda_linting”:false<br>}</p>
+</blockquote>
+</li>
+</ol>
+<p>接下来，sublime3编写python代码时会有提示功能。</p>
+<ul>
+<li><h4 id="配置Anaconda运行"><a href="#配置Anaconda运行" class="headerlink" title="配置Anaconda运行"></a>配置Anaconda运行</h4>参考: <a href="https://blog.csdn.net/zhihaoma/article/details/50917915" target="_blank" rel="noopener">https://blog.csdn.net/zhihaoma/article/details/50917915</a></li>
+</ul>
+<p>1.打开Sublime Text 3，工具–&gt;编译系统–&gt;新编译系统，就会打开文件sublime-build，</p>
+<ol start="2">
+<li>修改以下内容：<blockquote>
+<p>{<br>“cmd”: [“python”, “-u”, “$file”],<br>“path”:”E:/Anaconda3/envs/neuralnets”,<br>“file_regex”: “^[ ]<em>File \”(…</em>?)\”, line ([0-9]*)”,<br>“selector”: “source.python”,<br>“shell”: true<br>}</p>
+</blockquote>
+</li>
+</ol>
+<p>把path里面的内容修改为Anaconda编译器的安装目录即可。保存文件并命名为Anaconda3.sublime-build，文件自动保存在E:\SublimeText3\Data\Packages\User目录下，此时在sublime的工具-&gt; 编译系统中就会有Anaconda3，就选择这个编译环境，ctrl+b便可以运行python代码了。</p>
+<ul>
+<li><h4 id="Trouble-Shooting"><a href="#Trouble-Shooting" class="headerlink" title="Trouble Shooting"></a>Trouble Shooting</h4>*如果你没有保存一个文件就build，有可能出来以下的错误：</li>
+</ul>
+<p>E:/Anaconda3/envs/neuralnets\python.exe: can’t find ‘<strong>main</strong>‘ module in ‘’<br>           这个问题其实有点蠢, 就是因为没将要build的文件先保存再ctrl+b运行导致的, 所以记得先保存再运行,以便Python能够运行起来。</p>
 
-    </header>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/source/categories/Tech-Share/">Tech Share</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Analysis/">Data Analysis</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
   </div>
+  
 </article>
-	
 
-	
-		</div></section>
-	
+<!-- Table of Contents -->
 
+  
 
 
-</div></section>
+</section>
           <aside id="sidebar">
   
     <div style="margin: 20px 0;">

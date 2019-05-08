@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>python data analysis - 使用Sublime text 3 + Anaconda模式 | K.L. Huen&#39;s BLOG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="Data Analysis">
+  
+  
+  
+  
+  <meta name="description" content="简单记录一些配置时的要点 在Sublime中安装package control参考: https://blog.csdn.net/zhuangailing/article/details/79046187   view -&amp;gt; show console输入如下网址中内容:https://packagecontrol.io/installation  在preferences中的packages">
+<meta name="keywords" content="Data Analysis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python data analysis - 使用Sublime text 3 + Anaconda模式">
+<meta property="og:url" content="http://yoursite.com/2019/05/05/python data analysis - 使用Sublime text 3 + Anaconda模式/index.html">
+<meta property="og:site_name" content="K.L. Huen&#39;s BLOG">
+<meta property="og:description" content="简单记录一些配置时的要点 在Sublime中安装package control参考: https://blog.csdn.net/zhuangailing/article/details/79046187   view -&amp;gt; show console输入如下网址中内容:https://packagecontrol.io/installation  在preferences中的packages">
+<meta property="og:locale" content="English">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/538619-171a21193ea1af94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/538619-d5884d3e627bd328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-05-08T16:43:04.087Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python data analysis - 使用Sublime text 3 + Anaconda模式">
+<meta name="twitter:description" content="简单记录一些配置时的要点 在Sublime中安装package control参考: https://blog.csdn.net/zhuangailing/article/details/79046187   view -&amp;gt; show console输入如下网址中内容:https://packagecontrol.io/installation  在preferences中的packages">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/538619-171a21193ea1af94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+    <link rel="alternate" href="/atom.xml" title="K.L. Huen&#39;s BLOG" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/fashion.css">
+  <link rel="stylesheet" href="/css/glyphs.css">
+
+</head>
+</html>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+
+
+<header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="K.L. Huen&#39;s BLOG" rel="home"> K.L. Huen&#39;s BLOG </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">每一个不曾分享的剧本都是对主角的辜负 Welcome</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/categories/">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/tags/">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-python data analysis - 使用Sublime text 3 + Anaconda模式" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      python data analysis - 使用Sublime text 3 + Anaconda模式
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2019/05/05/python data analysis - 使用Sublime text 3 + Anaconda模式/" class="article-date">
+	  <time datetime="2019-05-05T03:40:42.385Z" itemprop="datePublished">May 5, 2019</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/source/categories/Tech-Share/">Tech Share</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="简单记录一些配置时的要点"><a href="#简单记录一些配置时的要点" class="headerlink" title="简单记录一些配置时的要点"></a>简单记录一些配置时的要点</h2><ul>
+<li><h4 id="在Sublime中安装package-control"><a href="#在Sublime中安装package-control" class="headerlink" title="在Sublime中安装package control"></a>在Sublime中安装package control</h4>参考: <a href="https://blog.csdn.net/zhuangailing/article/details/79046187" target="_blank" rel="noopener">https://blog.csdn.net/zhuangailing/article/details/79046187</a></li>
+</ul>
+<ol>
+<li><p>view -&gt; show console<br>输入如下网址中内容:<br><a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">https://packagecontrol.io/installation</a></p>
+</li>
+<li><p>在preferences中的packages control中输入  install package<br>在里面输入Anaconda, 完成后显示如下信息:<br><img src="https://upload-images.jianshu.io/upload_images/538619-171a21193ea1af94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+</li>
+<li><p>修改python路径<br>由于插件本身无法知道Python安装的路径，所以需要手动设置Python主程序的位置。选择Preferences-package Setting-Anaconda-Settings-Default。<br><img src="https://upload-images.jianshu.io/upload_images/538619-d5884d3e627bd328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+</li>
+<li><p>新建User Setting<br>选择Preferences-package Setting-Anaconda-Settings-Users选项，键入以下json数据, 修改其中的”python_interpreter” 为你的python使用路径。保存，重启sublime即可.<br>(python使用目录: 打开Prompt命令行, 在激活路径(conda info –env)下输入where python)</p>
+<blockquote>
+<p>{<br> “python_interpreter”:”E:/Anaconda3/envs/neuralnets”,<br> “suppress_word_completions”:true,<br> “suppress_explicit_completions”:true,<br> “comlete_parameters”:true,<br> “swallow_startup_errors”:true,<br> “anaconda_linting”:false<br>}</p>
+</blockquote>
+</li>
+</ol>
+<p>接下来，sublime3编写python代码时会有提示功能。</p>
+<ul>
+<li><h4 id="配置Anaconda运行"><a href="#配置Anaconda运行" class="headerlink" title="配置Anaconda运行"></a>配置Anaconda运行</h4>参考: <a href="https://blog.csdn.net/zhihaoma/article/details/50917915" target="_blank" rel="noopener">https://blog.csdn.net/zhihaoma/article/details/50917915</a></li>
+</ul>
+<p>1.打开Sublime Text 3，工具–&gt;编译系统–&gt;新编译系统，就会打开文件sublime-build，</p>
+<ol start="2">
+<li>修改以下内容：<blockquote>
+<p>{<br>“cmd”: [“python”, “-u”, “$file”],<br>“path”:”E:/Anaconda3/envs/neuralnets”,<br>“file_regex”: “^[ ]<em>File \”(…</em>?)\”, line ([0-9]*)”,<br>“selector”: “source.python”,<br>“shell”: true<br>}</p>
+</blockquote>
+</li>
+</ol>
+<p>把path里面的内容修改为Anaconda编译器的安装目录即可。保存文件并命名为Anaconda3.sublime-build，文件自动保存在E:\SublimeText3\Data\Packages\User目录下，此时在sublime的工具-&gt; 编译系统中就会有Anaconda3，就选择这个编译环境，ctrl+b便可以运行python代码了。</p>
+<ul>
+<li><h4 id="Trouble-Shooting"><a href="#Trouble-Shooting" class="headerlink" title="Trouble Shooting"></a>Trouble Shooting</h4>*如果你没有保存一个文件就build，有可能出来以下的错误：</li>
+</ul>
+<p>E:/Anaconda3/envs/neuralnets\python.exe: can’t find ‘<strong>main</strong>‘ module in ‘’<br>           这个问题其实有点蠢, 就是因为没将要build的文件先保存再ctrl+b运行导致的, 所以记得先保存再运行,以便Python能够运行起来。</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/source/categories/Tech-Share/">Tech Share</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Analysis/">Data Analysis</a></li></ul>
+
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/05/05/部署Python数据开发环境（Anaconda + theano_tensorflow_keras_scikit-learn/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          部署Python数据开发环境
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/05/05/Git 的 origin 和 master 分析/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Git的 origin 和 master 分析</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单记录一些配置时的要点"><span class="nav-number">1.</span> <span class="nav-text">简单记录一些配置时的要点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在Sublime中安装package-control"><span class="nav-number">1.0.1.</span> <span class="nav-text">在Sublime中安装package control</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置Anaconda运行"><span class="nav-number">1.0.2.</span> <span class="nav-text">配置Anaconda运行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Trouble-Shooting"><span class="nav-number">1.0.3.</span> <span class="nav-text">Trouble Shooting</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories/" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags/" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2019 K.L. Huen&#39;s BLOG All Rights Reserved.
+        
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+    
+    
+</script>
+    
+<script>
+  var disqus_shortname = 'Huen';
+  
+  var disqus_url = 'http://yoursite.com/2019/05/05/python data analysis - 使用Sublime text 3 + Anaconda模式/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+
+
+	<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?{{ theme.baidu_analytics }}";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
