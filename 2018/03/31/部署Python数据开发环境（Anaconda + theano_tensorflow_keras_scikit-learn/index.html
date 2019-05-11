@@ -3,23 +3,26 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>About | K.L. Huen</title>
+  <title>部署Python数据开发环境 | K.L. Huen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="Data Analysis">
   
   
   
-  <meta name="description" content="Here’s Juno’s page, share my life story and tech accumulate. Welcome.TBC…">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+  
+  <meta name="description" content="开发环境Anaconda + theano / Tensorflow / Keras / scikit-learn Anaconda 安装Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。Ana">
+<meta name="keywords" content="Data Analysis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="部署Python数据开发环境">
+<meta property="og:url" content="http://yoursite.com/2018/03/31/部署Python数据开发环境（Anaconda + theano_tensorflow_keras_scikit-learn/index.html">
 <meta property="og:site_name" content="K.L. Huen">
-<meta property="og:description" content="Here’s Juno’s page, share my life story and tech accumulate. Welcome.TBC…">
+<meta property="og:description" content="开发环境Anaconda + theano / Tensorflow / Keras / scikit-learn Anaconda 安装Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。Ana">
 <meta property="og:locale" content="English">
-<meta property="og:updated_time" content="2019-05-11T07:16:04.132Z">
+<meta property="og:updated_time" content="2019-05-11T06:53:15.076Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="Here’s Juno’s page, share my life story and tech accumulate. Welcome.TBC…">
+<meta name="twitter:title" content="部署Python数据开发环境">
+<meta name="twitter:description" content="开发环境Anaconda + theano / Tensorflow / Keras / scikit-learn Anaconda 安装Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。Ana">
   
     <link rel="alternate" href="/" title="K.L. Huen" type="application/atom+xml">
   
@@ -52,7 +55,7 @@
 </html>
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
   
@@ -125,7 +128,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+          <section id="main" style="float:none;"><article id="post-部署Python数据开发环境（Anaconda + theano_tensorflow_keras_scikit-learn" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -133,7 +136,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      about
+      部署Python数据开发环境
     </h1>
   
 
@@ -141,18 +144,60 @@
     
     <div class="article-meta">
       
-       
+	<a href="/2018/03/31/部署Python数据开发环境（Anaconda + theano_tensorflow_keras_scikit-learn/" class="article-date">
+	  <time datetime="2018-03-31T14:03:35.000Z" itemprop="datePublished">March 31, 2018</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Tech-Share/">Tech Share</a>
+ 
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Here’s Juno’s page, share my life story and tech accumulate. Welcome.<br>TBC…</p>
+        <h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><p><strong>Anaconda + theano / Tensorflow / Keras / scikit-learn</strong></p>
+<h2 id="Anaconda-安装"><a href="#Anaconda-安装" class="headerlink" title="Anaconda 安装"></a>Anaconda 安装</h2><p>Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。<br>Anaconda 下载连接：<a href="https://www.anaconda.com/download/" target="_blank" rel="noopener">https://www.anaconda.com/download/</a><br>NOTE: </p>
+<ol>
+<li>由于目前Tensorflow、Keras等DL库只支持64bit版本，所以在选择Anaconda发行版本时一定要选择64bit的</li>
+<li>在Anaconda的安装过程中，记得选择<br>Install for： All Users(requires admin privileges),<br>否则在安装完后无法在开始菜单中找到安装好的Anaconda的所有工具</li>
+</ol>
+<h2 id="安装Keras-Tensorflow-theano-等深度学习库及scikit-learn机器学习库"><a href="#安装Keras-Tensorflow-theano-等深度学习库及scikit-learn机器学习库" class="headerlink" title="安装Keras/Tensorflow/theano 等深度学习库及scikit-learn机器学习库"></a>安装Keras/Tensorflow/theano 等深度学习库及scikit-learn机器学习库</h2><p>安装完成后，配置path变量——<br>右键我的电脑-&gt;属性-&gt;高级选项-&gt;环境变量-&gt;系统变量-&gt;path-&gt;在path中添加路径：需要添加的有三个，以我的Anaconda安装目录为例，分别为：<br> E:\ProgramFiles_for_Major\Anaconda3;<br>E:\ProgramFiles_for_Major\Anaconda3\Scripts;<br>E:\ProgramFiles_for_Major\Anaconda3\Library\bin;</p>
+<p>在安装好的Anaconda 套件中打开 Anaconda Prompt，直接进入到command模式。</p>
+<p>更新conda<br><code>conda update conda</code><br><code>conda update --all</code><br>将pip升级到最新版：<br><code>python -m pip install -U pip</code></p>
+<blockquote>
+<p>– CREATE ENVIRONMENT/WORKSPACE FOR PYTHON 3.6:<br><code>conda create --name neuralnets python=3.6</code><br><code>activate neuralnets</code><br>– INSTALL EVERYTHING (notice the neuralnets workspace in parenthesis on each line). ACCEPT ANY DEPENDENCIES EACH OF THOSE STEPS WANTS TO INSTALL:<br><code>conda install theano</code><br><code>conda install mingw libpython</code><br><code>pip install tensorflow</code><br><code>pip install keras</code><br><code>conda install scikit-learn</code><br>注意，上述命令均在激活了neuralnets这个环境下执行，这里比较麻烦的是每次使用都要先激活 neuralmets 这个环境：<br><code>activate neuralnets</code></p>
+</blockquote>
+<a id="more"></a>
+<h2 id="验证是否安装成功"><a href="#验证是否安装成功" class="headerlink" title="验证是否安装成功"></a>验证是否安装成功</h2><p>在Prompt 终端直接进入python环境并import 这些库<br><code>python</code></p>
+<ol>
+<li><code>&gt;&gt;&gt;import tensorflow</code><br>若下一行出现&gt;&gt;&gt;，则说明TensorFlow安装成功</li>
+<li><code>&gt;&gt;&gt;import keras</code><br>若显示Using TensorFlow backed，则说明安装成功</li>
+<li><code>&gt;&gt;&gt;import theano</code><br>如果你看到“&gt;&gt;&gt;”三个箭头，没有别的乱七八糟的东西了，就说明：你！安！装！成！功！啦！<br>如果有提示需要添加环境变量的，就需要按照提示在系统环境变量中添加<br>MKL_THREADING_LAYER=GNU<br>然后<strong>重启prompt终端</strong>，再次<code>import theano</code></li>
+<li><code>&gt;&gt;&gt;import sklearn</code><br>若下一行出现&gt;&gt;&gt;，则说明scikit-learn安装成功</li>
+</ol>
+<p>若一切顺利，恭喜你，环境基本配好了！<br>在Spyder中使用可以参考下面的链接。</p>
+<p>几个重要的参考连接：</p>
+<ul>
+<li><a href="http://www.bubuko.com/infodetail-2485059.html" target="_blank" rel="noopener">http://www.bubuko.com/infodetail-2485059.html</a></li>
+<li><a href="https://www.jianshu.com/p/b8a703df5318" target="_blank" rel="noopener">https://www.jianshu.com/p/b8a703df5318</a></li>
+<li><a href="https://stackoverflow.com/questions/34097988/how-do-i-install-keras-and-theano-in-anaconda-python-on-windows" target="_blank" rel="noopener">https://stackoverflow.com/questions/34097988/how-do-i-install-keras-and-theano-in-anaconda-python-on-windows</a></li>
+<li><a href="http://www.cnblogs.com/AriesQt/p/6773811.html" target="_blank" rel="noopener">http://www.cnblogs.com/AriesQt/p/6773811.html</a></li>
+<li><a href="http://deeplearning.net/software/theano/index.html" target="_blank" rel="noopener">http://deeplearning.net/software/theano/index.html</a></li>
+<li><a href="https://conda.io/docs/user-guide/overview.html" target="_blank" rel="noopener">https://conda.io/docs/user-guide/overview.html</a></li>
+</ul>
 
       
     </div>
     <footer class="entry-meta entry-footer">
       
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/Tech-Share/">Tech Share</a>
+
       
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Analysis/">Data Analysis</a></li></ul>
+
       
         
 	<div id="comment">
@@ -184,201 +229,39 @@
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2018/03/31/Git 的 origin 和 master 分析/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Git的 origin 和 master 分析
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/07/11/衣食住行，谁是分享经济这个疆域的下一个霸主？/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">衣食住行，谁是分享经济这个疆域的下一个霸主？</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
 <!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#开发环境"><span class="nav-number">1.</span> <span class="nav-text">开发环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Anaconda-安装"><span class="nav-number">2.</span> <span class="nav-text">Anaconda 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Keras-Tensorflow-theano-等深度学习库及scikit-learn机器学习库"><span class="nav-number">3.</span> <span class="nav-text">安装Keras/Tensorflow/theano 等深度学习库及scikit-learn机器学习库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#验证是否安装成功"><span class="nav-number">4.</span> <span class="nav-text">验证是否安装成功</span></a></li></ol>
+    
+    </div>
+  </aside>
 </section>
-          <aside id="sidebar">
-  
-    <div style="margin: 20px 0;">
-	<div id="search-form-wrap">
-
-    <form class="search-form">
-        <label style="width: 72%;">
-            <span class="screen-reader-text">Search for:</span>
-            <input type="search" class="search-field" style="height: 36px; width: 100%;" placeholder=" Search…" value name="s" title="Search for:">
-        </label>
-        <input type="submit" class="search-form-submit" value="Search">
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something...">
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="/js/insight.js"></script>
-
-</div>
-</div>
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Connect With Us</h3>
-    <div class="widget widget_athemes_social_icons">
-
-    	<ul class="clearfix widget-social-icons">   
-    	
-   			<li><a href="https://github.com/" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
-
-   		
-   			<li><a href="https://www.jianshu.com/u/11f2d3db64b1 || book" title="简书"><i class="fa fa-简书" aria-hidden="true"></i></a></li> 
-
-   		
-   		</ul>
-
-
-   		<!--
-   		<ul class="clearfix widget-social-icons">   		
-   		<li class="widget-si-twitter"><a href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
-		<li class="widget-si-facebook"><a href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
-			<li class="widget-si-gplus"><a href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
-			<li class="widget-si-pinterest"><a href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
-			<li class="widget-si-flickr"><a href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
-			<li class="widget-si-instagram"><a href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
-		</ul> -->
-
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget_athemes_tabs">
-    <ul id="widget-tab" class="clearfix widget-tab-nav">
-      <li class="active"><a>Recent Posts</a></li>
-    </ul>
-    <div class="widget">
-      <ul>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/08/04/python data analysis - 使用Sublime text 3 + Anaconda模式/">python data analysis - 使用Sublime text 3 + Anaconda模式</a></h6>
-              <span>August 4, 2018</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/04/14/论物质价值溢价与掉价效应/">论物质价值溢价与掉价效应</a></h6>
-              <span>April 14, 2018</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/03/31/Git 的 origin 和 master 分析/">Git的 origin 和 master 分析</a></h6>
-              <span>March 31, 2018</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/03/31/部署Python数据开发环境（Anaconda + theano_tensorflow_keras_scikit-learn/">部署Python数据开发环境</a></h6>
-              <span>March 31, 2018</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2015/07/11/衣食住行，谁是分享经济这个疆域的下一个霸主？/">衣食住行，谁是分享经济这个疆域的下一个霸主？</a></h6>
-              <span>July 11, 2015</span>
-            </div>
-
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tech-Share/">Tech Share</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/共享经济/">共享经济</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/消费升级/">消费升级</a><span class="category-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Analysis/">Data Analysis</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Live-Share/">Live Share</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tech-Share/">Tech Share</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Data-Analysis/" style="font-size: 20px;">Data Analysis</a> <a href="/tags/Live-Share/" style="font-size: 20px;">Live Share</a> <a href="/tags/Tech-Share/" style="font-size: 10px;">Tech Share</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-</aside>
         
       </div>
 
@@ -432,7 +315,7 @@
 <script>
   var disqus_shortname = 'Huen';
   
-  var disqus_url = 'http://yoursite.com/about/index.html';
+  var disqus_url = 'http://yoursite.com/2018/03/31/部署Python数据开发环境（Anaconda + theano_tensorflow_keras_scikit-learn/';
   
   (function(){
     var dsq = document.createElement('script');
