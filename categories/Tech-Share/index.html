@@ -164,17 +164,7 @@
 <ol>
 <li><p>view -&gt; show console<br>输入如下网址中内容:<br><a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">https://packagecontrol.io/installation</a></p>
 </li>
-<li><p>在preferences中的packages control中输入  install package<br>在里面输入Anaconda, 完成后显示如下信息:<br><img src="https://upload-images.jianshu.io/upload_images/538619-171a21193ea1af94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-</li>
-<li><p>修改python路径<br>由于插件本身无法知道Python安装的路径，所以需要手动设置Python主程序的位置。选择Preferences-package Setting-Anaconda-Settings-Default。<br><img src="https://upload-images.jianshu.io/upload_images/538619-d5884d3e627bd328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-</li>
-<li><p>新建User Setting<br>选择Preferences-package Setting-Anaconda-Settings-Users选项，键入以下json数据, 修改其中的”python_interpreter” 为你的python使用路径。保存，重启sublime即可.<br>(python使用目录: 打开Prompt命令行, 在激活路径(conda info –env)下输入where python)</p>
-<blockquote>
-<p>{<br> “python_interpreter”:”E:/Anaconda3/envs/neuralnets”,<br> “suppress_word_completions”:true,<br> “suppress_explicit_completions”:true,<br> “comlete_parameters”:true,<br> “swallow_startup_errors”:true,<br> “anaconda_linting”:false<br>}</p>
-</blockquote>
-</li>
-</ol>
-<p>接下来，sublime3编写python代码时会有提示功能。<br></p>
+<li><p>在preferences中的packages control中输入  install package<br>在里面输入Anaconda, 完成后显示如下信息:</p></li></ol>
 
         
           <p class="article-more-link">
@@ -235,17 +225,7 @@
           
           <div class="entry-summary">
           <h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><p><strong>Anaconda + theano / Tensorflow / Keras / scikit-learn</strong></p>
-<h2 id="Anaconda-安装"><a href="#Anaconda-安装" class="headerlink" title="Anaconda 安装"></a>Anaconda 安装</h2><p>Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。<br>Anaconda 下载连接：<a href="https://www.anaconda.com/download/" target="_blank" rel="noopener">https://www.anaconda.com/download/</a><br>NOTE: </p>
-<ol>
-<li>由于目前Tensorflow、Keras等DL库只支持64bit版本，所以在选择Anaconda发行版本时一定要选择64bit的</li>
-<li>在Anaconda的安装过程中，记得选择<br>Install for： All Users(requires admin privileges),<br>否则在安装完后无法在开始菜单中找到安装好的Anaconda的所有工具</li>
-</ol>
-<h2 id="安装Keras-Tensorflow-theano-等深度学习库及scikit-learn机器学习库"><a href="#安装Keras-Tensorflow-theano-等深度学习库及scikit-learn机器学习库" class="headerlink" title="安装Keras/Tensorflow/theano 等深度学习库及scikit-learn机器学习库"></a>安装Keras/Tensorflow/theano 等深度学习库及scikit-learn机器学习库</h2><p>安装完成后，配置path变量——<br>右键我的电脑-&gt;属性-&gt;高级选项-&gt;环境变量-&gt;系统变量-&gt;path-&gt;在path中添加路径：需要添加的有三个，以我的Anaconda安装目录为例，分别为：<br> E:\ProgramFiles_for_Major\Anaconda3;<br>E:\ProgramFiles_for_Major\Anaconda3\Scripts;<br>E:\ProgramFiles_for_Major\Anaconda3\Library\bin;</p>
-<p>在安装好的Anaconda 套件中打开 Anaconda Prompt，直接进入到command模式。</p>
-<p>更新conda<br><code>conda update conda</code><br><code>conda update --all</code><br>将pip升级到最新版：<br><code>python -m pip install -U pip</code></p>
-<blockquote>
-<p>– CREATE ENVIRONMENT/WORKSPACE FOR PYTHON 3.6:<br><code>conda create --name neuralnets python=3.6</code><br><code>activate neuralnets</code><br>– INSTALL EVERYTHING (notice the neuralnets workspace in parenthesis on each line). ACCEPT ANY DEPENDENCIES EACH OF THOSE STEPS WANTS TO INSTALL:<br><code>conda install theano</code><br><code>conda install mingw libpython</code><br><code>pip install tensorflow</code><br><code>pip install keras</code><br><code>conda install scikit-learn</code><br>注意，上述命令均在激活了neuralnets这个环境下执行，这里比较麻烦的是每次使用都要先激活 neuralmets 这个环境：<br><code>activate neuralnets</code></p>
-</blockquote>
+<h2 id="Anaconda-安装"><a href="#Anaconda-安装" class="headerlink" title="Anaconda 安装"></a>Anaconda 安装</h2><p>Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。<br>Anaconda 下载连接：<a href="https://www.anaconda.com/download/" target="_blank" rel="noopener">https://www.anaconda.com/download/</a></p>
 
         
           <p class="article-more-link">
@@ -329,9 +309,6 @@
     	<ul class="clearfix widget-social-icons">   
     	
    			<li><a href="https://github.com/" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
-
-   		
-   			<li><a href="https://www.jianshu.com/u/11f2d3db64b1 || book" title="简书"><i class="fa fa-简书" aria-hidden="true"></i></a></li> 
 
    		
    		</ul>

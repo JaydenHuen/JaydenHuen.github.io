@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="K.L. Huen">
 <meta property="og:description" content="开发环境Anaconda + theano / Tensorflow / Keras / scikit-learn Anaconda 安装Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。Ana">
 <meta property="og:locale" content="English">
-<meta property="og:updated_time" content="2019-05-11T06:53:15.076Z">
+<meta property="og:updated_time" content="2019-05-12T02:54:11.171Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="部署Python数据开发环境">
 <meta name="twitter:description" content="开发环境Anaconda + theano / Tensorflow / Keras / scikit-learn Anaconda 安装Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。Ana">
@@ -157,7 +157,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><p><strong>Anaconda + theano / Tensorflow / Keras / scikit-learn</strong></p>
-<h2 id="Anaconda-安装"><a href="#Anaconda-安装" class="headerlink" title="Anaconda 安装"></a>Anaconda 安装</h2><p>Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。<br>Anaconda 下载连接：<a href="https://www.anaconda.com/download/" target="_blank" rel="noopener">https://www.anaconda.com/download/</a><br>NOTE: </p>
+<h2 id="Anaconda-安装"><a href="#Anaconda-安装" class="headerlink" title="Anaconda 安装"></a>Anaconda 安装</h2><p>Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。<br>Anaconda 下载连接：<a href="https://www.anaconda.com/download/" target="_blank" rel="noopener">https://www.anaconda.com/download/</a></p>
+<a id="more"></a>
+<p>NOTE: </p>
 <ol>
 <li>由于目前Tensorflow、Keras等DL库只支持64bit版本，所以在选择Anaconda发行版本时一定要选择64bit的</li>
 <li>在Anaconda的安装过程中，记得选择<br>Install for： All Users(requires admin privileges),<br>否则在安装完后无法在开始菜单中找到安装好的Anaconda的所有工具</li>
@@ -168,7 +170,6 @@
 <blockquote>
 <p>– CREATE ENVIRONMENT/WORKSPACE FOR PYTHON 3.6:<br><code>conda create --name neuralnets python=3.6</code><br><code>activate neuralnets</code><br>– INSTALL EVERYTHING (notice the neuralnets workspace in parenthesis on each line). ACCEPT ANY DEPENDENCIES EACH OF THOSE STEPS WANTS TO INSTALL:<br><code>conda install theano</code><br><code>conda install mingw libpython</code><br><code>pip install tensorflow</code><br><code>pip install keras</code><br><code>conda install scikit-learn</code><br>注意，上述命令均在激活了neuralnets这个环境下执行，这里比较麻烦的是每次使用都要先激活 neuralmets 这个环境：<br><code>activate neuralnets</code></p>
 </blockquote>
-<a id="more"></a>
 <h2 id="验证是否安装成功"><a href="#验证是否安装成功" class="headerlink" title="验证是否安装成功"></a>验证是否安装成功</h2><p>在Prompt 终端直接进入python环境并import 这些库<br><code>python</code></p>
 <ol>
 <li><code>&gt;&gt;&gt;import tensorflow</code><br>若下一行出现&gt;&gt;&gt;，则说明TensorFlow安装成功</li>

@@ -164,17 +164,7 @@
 <ol>
 <li><p>view -&gt; show console<br>输入如下网址中内容:<br><a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">https://packagecontrol.io/installation</a></p>
 </li>
-<li><p>在preferences中的packages control中输入  install package<br>在里面输入Anaconda, 完成后显示如下信息:<br><img src="https://upload-images.jianshu.io/upload_images/538619-171a21193ea1af94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-</li>
-<li><p>修改python路径<br>由于插件本身无法知道Python安装的路径，所以需要手动设置Python主程序的位置。选择Preferences-package Setting-Anaconda-Settings-Default。<br><img src="https://upload-images.jianshu.io/upload_images/538619-d5884d3e627bd328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-</li>
-<li><p>新建User Setting<br>选择Preferences-package Setting-Anaconda-Settings-Users选项，键入以下json数据, 修改其中的”python_interpreter” 为你的python使用路径。保存，重启sublime即可.<br>(python使用目录: 打开Prompt命令行, 在激活路径(conda info –env)下输入where python)</p>
-<blockquote>
-<p>{<br> “python_interpreter”:”E:/Anaconda3/envs/neuralnets”,<br> “suppress_word_completions”:true,<br> “suppress_explicit_completions”:true,<br> “comlete_parameters”:true,<br> “swallow_startup_errors”:true,<br> “anaconda_linting”:false<br>}</p>
-</blockquote>
-</li>
-</ol>
-<p>接下来，sublime3编写python代码时会有提示功能。<br></p>
+<li><p>在preferences中的packages control中输入  install package<br>在里面输入Anaconda, 完成后显示如下信息:</p></li></ol>
 
         
           <p class="article-more-link">
@@ -239,10 +229,6 @@
 <blockquote>
 <p>“ 这台路虎啊，啧，其实买的不是车，其实买的是生活。”  －夏东评车</p>
 </blockquote>
-<p>这一期节目主持人拿了一台100多万的路虎自由光和一台刚上市10来万的2018全新哈弗H6来对比…..（此处听到了笑声）。其实这期节目主要是想突出现如今国产哈弗H6的国际化水平越来越高，性价比巨好。事实上确实也是如此。</p>
-<p>确实，单从功能上来说，一辆国产车完全能满足需求，还不用说哈弗，一辆五菱神车都能满足你对于一辆车的需求（此处无意贬低神车 只是举个例。。。）<br>一台100多万的车跟一台10来万的车在功能上都是一台车，开出来，功能价值是一样的。那既然都一样，而且有些功能甚至这台哈弗H6上有的，那台100多万的路虎上都没有，为啥还会有人花多近90多万的钱来买一辆车？脑袋被门夹了？？</p>
-<p>很多人其实在看到上面的对比后会想，既然买辆哈弗能满足，那用剩下的90多万来做其他事情，例如说买房给个首期，或者用来做其他投资多好啊！！逻辑上也没毛病啊……….但问题是，既然能有100多万预算买车的人，还会开哈弗吗？</p>
-<p><strong>这里细想下去会涉及到另一个更深层的问题，物质对于使用的人来说会出现需求边际价值外的价值溢价或掉价。</strong></p>
 
         
           <p class="article-more-link">
@@ -311,10 +297,7 @@
 <li><p>将改动传回git（git push）</p>
 </li>
 </ol>
-<p>这3个步骤又涉及到两个repository，一个是remote repository，再远程服务器上，一个是local repository，再自己工作区上。其中</p>
-<p>1, 3两个步骤涉及到<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">remote server/remote repository/remote branch，</span><br></pre></td></tr></table></figure></p>
-<p>2涉及到<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">local</span> repository/<span class="built_in">local</span> branch</span><br></pre></td></tr></table></figure></p>
-<p>git clone 会根据你指定的remote server/repository/branch，拷贝一个副本到你本地，再git push之前，你对所有文件的改动都是在你自己本地的local repository来做的，你的改动(local branch)和remote branch是独立（并行）的。Gitk显示的就是local repository。</p>
+<p>这3个步骤又涉及到两个repository，一个是remote repository，再远程服务器上，一个是local repository，再自己工作区上。<br></p>
 
         
           <p class="article-more-link">
@@ -375,17 +358,7 @@
           
           <div class="entry-summary">
           <h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><p><strong>Anaconda + theano / Tensorflow / Keras / scikit-learn</strong></p>
-<h2 id="Anaconda-安装"><a href="#Anaconda-安装" class="headerlink" title="Anaconda 安装"></a>Anaconda 安装</h2><p>Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。<br>Anaconda 下载连接：<a href="https://www.anaconda.com/download/" target="_blank" rel="noopener">https://www.anaconda.com/download/</a><br>NOTE: </p>
-<ol>
-<li>由于目前Tensorflow、Keras等DL库只支持64bit版本，所以在选择Anaconda发行版本时一定要选择64bit的</li>
-<li>在Anaconda的安装过程中，记得选择<br>Install for： All Users(requires admin privileges),<br>否则在安装完后无法在开始菜单中找到安装好的Anaconda的所有工具</li>
-</ol>
-<h2 id="安装Keras-Tensorflow-theano-等深度学习库及scikit-learn机器学习库"><a href="#安装Keras-Tensorflow-theano-等深度学习库及scikit-learn机器学习库" class="headerlink" title="安装Keras/Tensorflow/theano 等深度学习库及scikit-learn机器学习库"></a>安装Keras/Tensorflow/theano 等深度学习库及scikit-learn机器学习库</h2><p>安装完成后，配置path变量——<br>右键我的电脑-&gt;属性-&gt;高级选项-&gt;环境变量-&gt;系统变量-&gt;path-&gt;在path中添加路径：需要添加的有三个，以我的Anaconda安装目录为例，分别为：<br> E:\ProgramFiles_for_Major\Anaconda3;<br>E:\ProgramFiles_for_Major\Anaconda3\Scripts;<br>E:\ProgramFiles_for_Major\Anaconda3\Library\bin;</p>
-<p>在安装好的Anaconda 套件中打开 Anaconda Prompt，直接进入到command模式。</p>
-<p>更新conda<br><code>conda update conda</code><br><code>conda update --all</code><br>将pip升级到最新版：<br><code>python -m pip install -U pip</code></p>
-<blockquote>
-<p>– CREATE ENVIRONMENT/WORKSPACE FOR PYTHON 3.6:<br><code>conda create --name neuralnets python=3.6</code><br><code>activate neuralnets</code><br>– INSTALL EVERYTHING (notice the neuralnets workspace in parenthesis on each line). ACCEPT ANY DEPENDENCIES EACH OF THOSE STEPS WANTS TO INSTALL:<br><code>conda install theano</code><br><code>conda install mingw libpython</code><br><code>pip install tensorflow</code><br><code>pip install keras</code><br><code>conda install scikit-learn</code><br>注意，上述命令均在激活了neuralnets这个环境下执行，这里比较麻烦的是每次使用都要先激活 neuralmets 这个环境：<br><code>activate neuralnets</code></p>
-</blockquote>
+<h2 id="Anaconda-安装"><a href="#Anaconda-安装" class="headerlink" title="Anaconda 安装"></a>Anaconda 安装</h2><p>Anaconda 实际上是一个python开发环境的集成包，安装好后就已经等于安装好了python + Spyder + Jupyter Notebook 等等基本工具了，至于Spyder 和 Jupyter Notebook等是何物以及有何用就不细说了。<br>Anaconda 下载连接：<a href="https://www.anaconda.com/download/" target="_blank" rel="noopener">https://www.anaconda.com/download/</a></p>
 
         
           <p class="article-more-link">
@@ -446,10 +419,7 @@
           
           <div class="entry-summary">
           <p><img src="/2015/07/11/衣食住行，谁是分享经济这个疆域的下一个霸主？/paries.jpg" alt></p>
-<p>最近发现，分享经济这种商业模式开始逐渐清晰，至少基本的需求领域开始有领导者了，分享出行工具领域中，Uber的出现有着里程碑的意义。</p>
-<p>在过去，社会上各个领域各个阶层各个社交圈子所支配的资源差异非常大，普通阶层基本上没机会或者说根本没可能坐上法拉利、玛莎拉蒂这样的豪车，连想都不会想，但Uber的出现打破了这块冰。</p>
-<p>这就是互联网思维＋分享经济商业模式的魅力。互联网思维中很重要一点就是打破时间空间的隔离以及去中间化，在这样令人浮想联翩的发挥空间下，互联网下的分享经济模式诞生了。分享，可以分为无偿分享和有偿分享，如果说前者在现今这个商业社会中只能匍匐前进的话，那么后者作为一种商业模式绝对能以排山倒海的姿态征服大家。</p>
-<p>深谙互联网思维的人在大家还没清楚认识到互联网究竟为何物时，已经时刻思考着如何利用互联网创造更方便人类生产生活的模式了。<br></p>
+<p>最近发现，分享经济这种商业模式开始逐渐清晰，至少基本的需求领域开始有领导者了，分享出行工具领域中，Uber的出现有着里程碑的意义。<br></p>
 
         
           <p class="article-more-link">
@@ -533,9 +503,6 @@
     	<ul class="clearfix widget-social-icons">   
     	
    			<li><a href="https://github.com/" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
-
-   		
-   			<li><a href="https://www.jianshu.com/u/11f2d3db64b1 || book" title="简书"><i class="fa fa-简书" aria-hidden="true"></i></a></li> 
 
    		
    		</ul>
